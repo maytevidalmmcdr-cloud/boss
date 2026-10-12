@@ -1,0 +1,669 @@
+.modelo1 {
+    width: 300px;
+    height: 100px;
+    background-color: lightblue;
+    text-align: center;
+    padding-top: 40px;
+    box-sizing: border-box;
+}
+
+.modelo2 {
+    width: 300px;
+    background-color: lightgreen;
+    padding: 40px;
+    text-align: center;
+}
+
+/* EJEMPLO 3: BORDER */
+
+.modelo3 {
+    width: 300px;
+    background-color: lightyellow;
+    padding: 30px;
+    border: 8px solid blue;
+    text-align: center;
+}
+
+/* EJEMPLO 4: MARGIN */
+
+.modelo4 {
+    width: 300px;
+    background-color: pink;
+    padding: 30px;
+    border: 5px solid red;
+    margin: 50px;
+    text-align: center;
+}
+
+/* EJEMPLO 5: MODELO COMPLETO */
+
+.modelo5 {
+    width: 300px;
+    background-color: lightcyan;
+    padding: 30px;
+    border: 8px solid purple;
+    margin: 50px;
+    text-align: center;
+}
+body {
+            font-family: Arial, sans-serif;
+            margin: 30px;
+            background-color: #f5f5f5;
+        }
+
+        h1 {
+            text-align: center;
+            color: rgb(7, 7, 16);
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        .borde1,
+        .borde2,
+        .borde3,
+        .borde4,
+        .borde5 {
+            width: 300px;
+            padding: 25px;
+            margin: 20px;
+            text-align: center;
+        }
+
+        .borde1 {
+            border: 5px solid blue;
+        }
+
+        .borde2 {
+            border: 5px dotted green;
+        }
+
+        .borde3 {
+            border: 5px dashed red;
+        }
+
+        .borde4 {
+            border: 8px double purple;
+        }
+
+        .borde5 {
+            border: 5px solid orange;
+            border-radius: 30px;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 30px;
+            background-color: #f5f5f5;
+        }
+
+        h1 {
+            text-align: center;
+            color: rgb(18, 18, 29);
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        .fondo1,
+        .fondo2,
+        .fondo3,
+        .fondo4,
+        .fondo5 {
+            width: 400px;
+            height: 100px;
+            margin: 20px;
+            padding: 30px;
+            box-sizing: border-box;
+            text-align: center;
+        }
+
+        .fondo1 {
+            background-color: lightblue;
+        }
+
+        .fondo2 {
+            background-color: lightgreen;
+        }
+
+        .fondo3 {
+    background-image: url("img/bb.jpeg");
+    background-size: cover;       /* Para que se ajuste al div */
+    background-position: center;  /* Centra la imagen */
+    color: white;
+}
+        .fondo4 {
+            background-color: orange;
+            background-image: radial-gradient(circle, yellow, orange, red);
+        }
+
+        .fondo5 {
+            background: linear-gradient(to right, pink, purple);
+            color: white;
+        }
+        body {
+    font-family: Arial, sans-serif;
+    margin: 30px;
+    background-color: #f5f5f5;
+}
+
+h1 {
+    text-align: center;
+    color: rgb(14, 14, 30);
+}
+
+h2 {
+    color: #333;
+}
+
+.sombra1,
+.sombra2,
+.sombra3,
+.sombra4 {
+    width: 300px;
+    padding: 30px;
+    margin: 30px;
+    text-align: center;
+    background-color: white;
+}
+
+.sombra1 {
+    background-color: white;
+    box-shadow: 5px 5px 5px black;
+}
+
+
+.sombra2 {
+    box-shadow: 15px 15px 10px gray;
+}
+
+.sombra3 {
+    box-shadow: 0 0 20px gray;
+}
+
+.sombra4 {
+    box-shadow: inset 0 0 15px gray;
+}
+
+.sombra5 {
+    font-size: 35px;
+    font-weight: bold;
+    text-shadow: 4px 4px 5px gray;
+}
+
+video {
+    max-width: 100%;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 30px;
+    background-color: #f5f5f5;
+}
+
+h1 {
+    text-align: center;
+    color: rgb(24, 24, 28);
+}
+
+h2 {
+    color: #333;
+}
+
+.sombra1,
+.sombra2,
+.sombra3,
+.sombra4 {
+    width: 300px;
+    padding: 30px;
+    margin: 30px;
+    text-align: center;
+    background-color: white;
+}
+
+.sombra1 {
+    box-shadow: 5px 5px 5px black;
+}
+
+.sombra2 {
+    box-shadow: 15px 15px 10px red;
+}
+
+.sombra3 {
+    box-shadow: 0 0 20px blue;
+}
+
+.sombra4 {
+    box-shadow: inset 0 0 15px green;
+}
+
+.sombra5 {
+    font-size: 35px;
+    font-weight: bold;
+    text-shadow: 4px 4px 5px purple;
+}
+
+video {
+    max-width: 100%;
+}
+ body {
+            font-family: Arial, sans-serif;
+            margin: 30px;
+            background-color: #f5f5f5;
+        }
+
+        h1 {
+            text-align: center;
+            color: rgb(13, 13, 19);
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        .display1 {
+            display: block;
+            width: 250px;
+            padding: 20px;
+            background-color: lightblue;
+        }
+
+        .display2 {
+            display: inline;
+            background-color: lightgreen;
+            padding: 10px;
+        }
+
+        .display3 {
+            display: inline-block;
+            width: 150px;
+            padding: 20px;
+            background-color: orange;
+            margin: 10px;
+        }
+
+        .display4 {
+            display: none;
+        }
+
+        .display5 {
+            display: flex;
+            gap: 15px;
+        }
+
+        .display5 div {
+            background-color: pink;
+            padding: 20px;
+        }
+
+        video {
+            max-width: 100%;
+        }
+         body {
+            font-family: Arial, sans-serif;
+            margin: 30px;
+            background-color: #f5f5f5;
+        }
+
+        h1 {
+            text-align: center;
+            color: rgb(17, 17, 23);
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        .pos1 {
+            position: static;
+            background-color: lightblue;
+            padding: 20px;
+            width: 200px;
+        }
+
+        .pos2 {
+            position: relative;
+            left: 50px;
+            background-color: lightgreen;
+            padding: 20px;
+            width: 200px;
+        }
+
+        .contenedor {
+            position: relative;
+            width: 400px;
+            height: 120px;
+            background-color: lightgray;
+        }
+
+        .pos3 {
+            position: absolute;
+            right: 20px;
+            top: 20px;
+            background-color: orange;
+            padding: 20px;
+        }
+
+        .pos4 {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: red;
+            color: white;
+            padding: 15px;
+        }
+
+        .pos5 {
+            position: sticky;
+            top: 0;
+            background-color: purple;
+            color: white;
+            padding: 15px;
+        }
+
+        video {
+            max-width: 100%;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 30px;
+            background-color: #f5f5f5;
+        }
+
+        h1 {
+            text-align: center;
+            color: rgb(20, 20, 28);
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        .flex1,
+        .flex2,
+        .flex3,
+        .flex4,
+        .flex5 {
+            display: flex;
+            width: 500px;
+            min-height: 100px;
+            margin: 20px;
+            padding: 15px;
+            background-color: #ddd;
+        }
+
+        .flex1 {
+            gap: 10px;
+        }
+
+        .flex1 div {
+            background-color: lightblue;
+            padding: 25px;
+        }
+
+        .flex2 {
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .flex2 div {
+            background-color: lightgreen;
+            padding: 25px;
+        }
+
+        .flex3 {
+            justify-content: space-between;
+        }
+
+        .flex3 div {
+            background-color: orange;
+            padding: 20px;
+        }
+
+        .flex4 {
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .flex4 div {
+            background-color: pink;
+            padding: 10px;
+        }
+
+        .flex5 {
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .flex5 div {
+            background-color: purple;
+            color: white;
+            padding: 25px;
+        }
+
+        video {
+            max-width: 100%;
+        }
+         body {
+            font-family: Arial, sans-serif;
+            margin: 30px;
+            background-color: #f5f5f5;
+        }
+
+        h1 {
+            text-align: center;
+            color: rgb(20, 20, 27);
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        .grid1,
+        .grid2,
+        .grid3,
+        .grid4,
+        .grid5 {
+            width: 500px;
+            margin: 20px;
+        }
+
+        .grid1 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+        }
+
+        .grid1 div {
+            background-color: lightblue;
+            padding: 30px;
+            text-align: center;
+        }
+
+        .grid2 {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+        }
+
+        .grid2 div {
+            background-color: lightgreen;
+            padding: 25px;
+            text-align: center;
+        }
+
+        .grid3 {
+            display: grid;
+            grid-template-rows: repeat(3, 70px);
+            gap: 10px;
+        }
+
+        .grid3 div {
+            background-color: orange;
+            padding: 20px;
+        }
+
+        .grid4 {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px;
+        }
+
+        .grid4 div {
+            background-color: pink;
+            padding: 30px;
+            text-align: center;
+        }
+
+        .grid5 {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 10px;
+        }
+
+        .grid5 div {
+            background-color: lightcyan;
+            padding: 30px;
+        }
+
+        .grid5 .principal {
+            grid-row: span 2;
+        }
+
+        video {
+            max-width: 100%;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 30px;
+            background-color: #f5f5f5;
+        }
+
+        h1 {
+            text-align: center;
+            color: rgb(14, 14, 24);
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        .animacion1,
+        .animacion2,
+        .animacion3,
+        .animacion4,
+        .animacion5 {
+            width: 180px;
+            padding: 30px;
+            margin: 30px;
+            text-align: center;
+        }
+
+        .animacion1 {
+            background-color: lightblue;
+            animation: movimiento 3s infinite alternate;
+        }
+
+        @keyframes movimiento {
+            from {
+                transform: translateX(0);
+            }
+
+            to {
+                transform: translateX(200px);
+            }
+        }
+
+        .animacion2 {
+            background-color: lightgreen;
+            animation: tamanio 2s infinite alternate;
+        }
+
+        @keyframes tamanio {
+            from {
+                transform: scale(1);
+            }
+
+            to {
+                transform: scale(1.4);
+            }
+        }
+
+        .animacion3 {
+            background-color: orange;
+            animation: girar 3s infinite linear;
+        }
+
+        @keyframes girar {
+            from {
+                transform: rotate(0deg);
+            }
+
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        .animacion4 {
+            background-color: red;
+            color: white;
+            animation: colores 3s infinite alternate;
+        }
+
+        @keyframes colores {
+            from {
+                background-color: red;
+            }
+
+            to {
+                background-color: blue;
+            }
+        }
+
+        .animacion5 {
+            background-color: purple;
+            color: white;
+            animation: aparecer 2s infinite alternate;
+        }
+
+        @keyframes aparecer {
+            from {
+                opacity: 0.2;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        video {
+            max-width: 100%;
+        }
+         body {
+            font-family: Arial, sans-serif;
+            margin: 30px;
+            background-color: #f5f5f5;
+        }
+
+        h1 {
+            text-align: center;
+            color: rgb(19, 19, 33);
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        .ejemplo {
+            margin: 20px 0;
+        }
+
+        video {
+            max-width: 100%;
+        }
+
+        
+
+        
+
