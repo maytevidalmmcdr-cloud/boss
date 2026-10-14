@@ -1,3 +1,112 @@
+
+.menu {
+    list-style: none;
+    padding: 0;
+    margin: 20px auto;
+    width: 320px;
+}
+
+.menu li {
+    margin: 18px 0;
+}
+
+.menu a {
+    display: block;
+    padding: 16px 10px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+/* 1. Cuadrado con sombra */
+.menu li:nth-child(1) a {
+    background: #ffd900;
+    color: black;
+    border: 3px solid black;
+    border-radius: 0;
+    box-shadow: 5px 5px #777;
+}
+
+/* 2. Rectángulo muy redondeado */
+.menu li:nth-child(2) a {
+    background: #7954e8;
+    color: white;
+    border: 3px solid #4930a0;
+    border-radius: 25px;
+}
+
+/* 3. Forma ovalada */
+.menu li:nth-child(3) a {
+    background: #ed75e9;
+    color: black;
+    border: 3px solid #c34cbe;
+    border-radius: 50px;
+}
+
+/* 4. Bordes punteados y redondeados */
+.menu li:nth-child(4) a {
+    background: #292929;
+    color: #36e5f2;
+    border: 4px dotted #36e5f2;
+    border-radius: 35px;
+}
+
+/* 5. Esquinas opuestas redondeadas */
+.menu li:nth-child(5) a {
+    background: #a995f5;
+    color: white;
+    border: 3px solid #6b4bd1;
+    border-radius: 0 35px 0 35px;
+}
+
+/* 6. Forma inclinada */
+.menu li:nth-child(6) a {
+    background: #e64be8;
+    color: white;
+    border: 3px solid #9c27b0;
+    border-radius: 12px;
+    transform: skew(-5deg);
+}
+
+/* 7. Esquinas diagonales */
+.menu li:nth-child(7) a {
+    background: #70e1d1;
+    color: #173c43;
+    border: 3px solid #199c92;
+    border-radius: 30px 0 30px 0;
+}
+
+/* 8. Rectángulo con esquinas pequeñas */
+.menu li:nth-child(8) a {
+    background: #ff914d;
+    color: white;
+    border: 4px double #b94d12;
+    border-radius: 5px;
+}
+
+/* 9. Forma de cápsula */
+.menu li:nth-child(9) a {
+    background: #f48fb1;
+    color: #5b1832;
+    border: 3px solid #d81b60;
+    border-radius: 100px;
+}
+
+/* 10. Forma de boleto */
+.menu li:nth-child(10) a {
+    background: #e66cae;
+    color: #56234b;
+    border: 3px solid #333;
+    border-radius: 0 0 40px 40px;
+}
+
+/* Movimiento al pasar el mouse */
+.menu a:hover {
+    transform: scale(1.08) translateX(5px);
+    filter: brightness(1.1);
+}
+
 .modelo1 {
     width: 300px;
     height: 100px;
