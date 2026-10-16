@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+   width:100vw;
+    height:100vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 10fr 1fr;
+
+}
+header{
+    background-color: #353baf;
+}
+nav{
+    background-color: #3daf35;
+}
+main{
+    background-color: #e9f546;
+}
+footer{
+    background-color: #df34b2;
+}
+
+
+
+@media (min-width: 0px) and (max-width: 399px) {
+    body{
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    }
+    header {
+       background-color: blueviolet;
+        
+    }
+    nav {
+        background-color: rgb(95, 150, 193);
+    }
+    main {
+        background-color: rgb(216, 90, 27);
+    }
+    footer {
+        background-color: rgb(177, 71, 89);
+        
+    }
+}
+@media (min-width: 400px) and (max-width: 767px) {
+    body{
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 3fr 1fr;
+    }
+    header {
+       background-color: rgb(69, 79, 145);
+        
+    }
+    nav {
+        background-color: rgb(49, 150, 201);
+    }
+    main {
+        background-color: rgb(148, 57, 118);
+    }
+    footer {
+        background-color: chocolate;
+        
+    }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+    body{
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 4fr ;
+   
+    
+    }
+    header {
+       background-color: rgb(154, 121, 194);
+        
+    }
+    nav {
+        background-color: rgb(206, 116, 134);
+    }
+    main {
+        background-color: magenta;
+    }
+    footer {
+        background-color: rgb(236, 233, 100);
+        
+    }
+}
+@media (min-width: 1024px) and (max-width: 1245px) {
+    body{
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr 10fr 1fr;
+    text-align: center;
+    }
+    header {
+        grid-column: 1/3;
+        grid-row: 1/2;
+    }
+    nav {
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+    main {
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
+    footer {
+        grid-column: 1/3;
+        grid-row: 3/4;
+    }
+}
