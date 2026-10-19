@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-B/GM4XqrwHnWXNOWMbloTmrYXZg10cakYGmpfsR/bbzQ6JAJI4ihuyADKLnBgrCe" crossorigin="anonymous">
+    <link rel="stylesheet"
+href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <title>Bootstrap</title>
+</head>
+<body>
+    <h1>Bootstrap</h1>
+    <hr>
+    
+    <button class="btn-solid theme-danger">Boton</button>
+    <button class="btn-outline theme-success">Boton</button>
+    <button class="btn-solid theme-warning">Boton</button>
+    <button class="btn-outline theme-accent">Boton</button>
+
+    <table class="table mt-4">
+        <thead>
+            <tr class="theme-inverse">
+                <td>a</td>
+                <td>a</td>
+                <td>a</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="theme-warning">a</td>
+                <td>a</td>
+                <td>a</td>
+            </tr>
+            <tr class="theme-info">
+                <td>a</td>
+                <td>a</td>
+                <td>a</td>
+            </tr>
+            <tr class="theme-success">
+                <td>a</td>
+                <td>a</td>
+                <td>a</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <br><br>
+
+    <h2 class="text-center">Carrusel</h2>
+    <div id="carouselStacked" class="carousel slide w-50 mx-auto" style="width: 100px;">
+        <div class="d-flex justify-content-between align-items-center">
+            <h5 class="mb-0"></h5>
+            <div>
+                <button class="btn-icon btn-sm" type="button" data-bs-target="#carouselStacked" data-bs-slide="prev">
+                    <span class="carousel-icon-prev" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="btn-icon btn-sm" type="button" data-bs-target="#carouselStacked" data-bs-slide="next">
+                    <span class="carousel-icon-next" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+        <div class="carousel-inner rounded-5">
+            <div class="carousel-item active">
+                <img src="css/img/fondo1.webp" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="css/img/fondo2.webp" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="css/img/fondo3.webp" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="css/img/fondo4.webp" class="d-block w-100" alt="...">
+            </div>
+        </div>
+    </div>
+
+    <h2 class="text-center my-5">VENTANA MODAL</h2>
+    <button class="btn-solid theme-success d-block w-25 mx-auto" data-bs-toggle="dialog" data-bs-target="#midialogo">
+        ABRIR DIALOGO
+    </button>
+
+    <dialog class="dialog" id="midialogo">
+        <div class="dialog-header">
+            <h5 class="modal-title">GRUPO 505</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="dialog" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <p>Desarrollo de aplicaciones web básicas en Bootstrap</p>
+        </div>
+        <div class="dialog-footer">
+            <button type="button" class="btn-solid theme-danger" data-bs-dismiss="dialog">Cerrar</button>
+ <button type="button" class="btn-solid theme-danger" data-bs-dismiss="dialog">Aceptar</button>
+        </div>
+    </dialog>
+
+    <form class="w-50 mx-auto my-5">
+        <div class="mb-3">
+            <label for="exampleFormControlInput" class="form-label mb-2">Email address</label>
+            <input type="email" class="form-control" id="exampleFormControlInput" placeholder="name@example.com">
+        </div>
+
+        <div class="form-field mb-3">
+            <label for="exampleFormControlSelect2" class="form-label">Example select</label>
+            <select class="form-control" id="exampleFormControlSelect2">
+                <option>Choose one...</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+            </select>
+        </div>
+        
+        <button type="submit" class="btn-solid theme-success my-auto">ACEPTAR</button>
+    </form>
+<br><br><br><br><br>
+
+
+    <h2 class="text-center my-5">ACORDEON</h2>
+
+<div class="accordion theme-danger w-50 mx-auto">
+  <details class="accordion-item" name="accordionExample" open>
+    <summary class="accordion-header">
+      UNO
+      <svg class="accordion-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="m2 5 6 6 6-6"/></svg>
+    </summary>
+    <div class="accordion-body">
+      <img src="css/img/gti.webp" class="d-block w-100 rounded-5" alt="...">
+    </div>
+  </details>
+
+  <details class="accordion-item" name="accordionExample">
+    <summary class="accordion-header">
+      DOS
+      <svg class="accordion-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="m2 5 6 6 6-6"/></svg>
+    </summary>
+    <div class="accordion-body">
+      <img src="css/img/fondo2.webp" class="d-block w-100 rounded-5" alt="...">
+    </div>
+  </details>
+
+  <details class="accordion-item" name="accordionExample">
+    <summary class="accordion-header">
+      TRES
+      <svg class="accordion-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="m2 5 6 6 6-6"/></svg>
+    </summary>
+    <div class="accordion-body">
+      <img src="css/img/fondo3.webp" class="d-block w-100 rounded-5" alt="...">
+    </div>
+  </details>
+</div>
+
+<br><br><br><br><br><br><br>
+
+<h2 class="text-center my-5">CARD</h2>
+<div class="card theme-accent w-50 mx-auto" style="width: 18rem;">
+    <h4 class="card-title">Volkswagen Golf GTI de octava generación (Mk8).</h4>
+    <p class="card-text">Motor 2.0 TSI turbo</p>
+  </div>
+  <div class="card-body flex-row gap-4">
+    <img src="css/img/fondo1.webp" class="card-img-top" style="width: 80%; height: auto; display: block; margin: auto;">
+  </div>
+</div>
+
+<div class="card card-row w-50 mx-auto my-5" style="max-width: 540px;">
+  <div class="card-body">
+    <h4 class="card-title"> Volkswagen Golf GTI de séptima generación (Mk7)</h4>
+    <p class="card-text">hatchback deportivo con motor 2.0 TSI de 220–230 HP, transmisión manual o DSG, y un diseño que marcó la transición hacia el actual Mk8.</p>
+    <p class="card-text"><small class="fg-2">HACE UN AÑO</small></p>
+  </div>
+  <img src="css/img/fondo2.webp" class="card-img-top" alt="...">
+</div>
+<br><br><br><br><br>
+
+<h2 class="text-center my-5">NAV BAR</h2>
+<nav class="navbar md:navbar-expand bg-1">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Volkswagen GTI</a>
+    <button class="btn-icon navbar-toggler" type="button" data-bs-toggle="drawer" data-bs-target="#navbarDrawer" aria-controls="navbarDrawer" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon" aria-hidden="true"></span>
+    </button>
+    <dialog class="drawer drawer-end" tabindex="-1" id="navbarDrawer" aria-labelledby="navbarDrawerLabel">
+      <div class="drawer-header">
+        <h5 class="drawer-title" id="navbarDrawerLabel">Menú</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="drawer" aria-label="Close"></button>
+      </div>
+      <div class="drawer-body mb-2 md:mb-0">
+        <ul class="nav navbar-nav me-auto">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Historia del GTI</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Modelos</a>
+          </li>
+          <li class="nav-item">
+            <button class="nav-link" type="button" data-bs-toggle="menu" aria-expanded="false">
+              Versiones
+            </button>
+            <div class="menu">
+              <a class="menu-item" href="#">GTI estándar</a>
+              <a class="menu-item" href="#">GTI Autobahn</a>
+              <a class="menu-item" href="#">GTI Clubsport</a>
+              <hr class="menu-divider">
+              <a class="menu-item" href="#">Comparaciones</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" aria-disabled="true">Perfil GTI</a>
+          </li>
+        </ul>
+        <form class="hstack gap-2" role="search">
+          <input class="form-control" type="search" placeholder="Buscar GTI" aria-label="Search"/>
+          <button class="btn-solid btn-icon theme-secondary" type="submit">
+            <svg class="bi" width="16" height="16"><use href="#search" /></svg>
+          </button>
+        </form>
+      </div>
+    </dialog>
+  </div>
+</nav>
+
+<br><br><br><br><br>
+
+<h2 class="text-center my-5">TABS</h2>
+<ul class="nav nav-tabs" id="myTab" role="tablist">
+  <li class="nav-item" role="presentation">
+    <button class="nav-link active" id="historia-tab" data-bs-toggle="tab" data-bs-target="#historia-tab-pane" type="button" role="tab" aria-controls="historia-tab-pane" aria-selected="true">Historia</button>
+  </li>
+  <li class="nav-item" role="presentation">
+    <button class="nav-link" id="modelos-tab" data-bs-toggle="tab" data-bs-target="#modelos-tab-pane" type="button" role="tab" aria-controls="modelos-tab-pane" aria-selected="false">Modelos</button>
+  </li>
+  <li class="nav-item" role="presentation">
+    <button class="nav-link" id="tecnologia-tab" data-bs-toggle="tab" data-bs-target="#tecnologia-tab-pane" type="button" role="tab" aria-controls="tecnologia-tab-pane" aria-selected="false">Tecnología</button>
+  </li>
+  <li class="nav-item" role="presentation">
+    <button class="nav-link" id="versiones-tab" data-bs-toggle="tab" data-bs-target="#versiones-tab-pane" type="button" role="tab" aria-controls="versiones-tab-pane" aria-selected="false">Versiones</button>
+  </li>
+</ul>
+<div class="tab-content" id="myTabContent">
+  <div class="tab-pane show active" id="historia-tab-pane" role="tabpanel" aria-labelledby="historia-tab" tabindex="0">
+    <p>El <strong>Golf GTI</strong> nació en 1976 como un proyecto casi secreto dentro de Volkswagen. Su objetivo era crear un compacto deportivo accesible, y terminó convirtiéndose en un ícono mundial.</p>
+  </div>
+  <div class="tab-pane" id="modelos-tab-pane" role="tabpanel" aria-labelledby="modelos-tab" tabindex="0">
+    <p>El <strong>GTI Mk8</strong> es la última generación, con motor 2.0 TSI de hasta 265 HP, transmisión DSG de 7 velocidades y diseño moderno con detalles rojos.</p>
+  </div>
+  <div class="tab-pane" id="tecnologia-tab-pane" role="tabpanel" aria-labelledby="tecnologia-tab" tabindex="0">
+    <p>Cuenta con <strong>pantalla táctil de 12.9”</strong>, sistema de sonido Harman/Kardon®, asistentes IQ.DRIVE® y control de chasis adaptativo (DCC).</p>
+  </div>
+  <div class="tab-pane" id="versiones-tab-pane" role="tabpanel" aria-labelledby="versiones-tab" tabindex="0">
+    <p>Existen varias versiones: <strong>GTI estándar</strong>, <strong>GTI Autobahn</strong> y <strong>GTI Clubsport</strong>, cada una con diferentes niveles de potencia y equipamiento.</p>
+  </div>
+</div>
+
+<br><br><br><br><br><br>
+
+<h2 class="text-center my-5">TOSTADA</h2>
+
+<button type="button" class="btn-solid theme-primary" id="liveToastBtn">
+    Toca aquí
+</button>
+
+<div class="toast-container position-fixed bottom-0 end-0 p-3">
+    <div id="liveToast" class="toast" role="alert"
+         aria-live="assertive" aria-atomic="true">
+
+        <div class="toast-header">
+            <strong class="me-auto">Volkswagen GTI</strong>
+            <small>JUSTO AHORA</small>
+
+            <button type="button" class="btn-close"
+                    data-bs-dismiss="toast"></button>
+        </div>
+
+        <div class="toast-body">
+            ¡Has descubierto el <strong>Golf GTI Mk8</strong> con motor 2.0 TSI y 265 HP!
+        </div>
+
+    </div>
+</div>
+
+<script>
+    const boton = document.getElementById('liveToastBtn');
+    const tostada = document.getElementById('liveToast');
+
+    boton.addEventListener('click', function () {
+        const toast = new bootstrap.Toast(tostada);
+        toast.show();
+    });
+</script>
+
+<br><br><br><br><br><br><br>
+
+<h2 class="text-center my-5">ICONOS</h2>
+<i class="bi bi-car-front fs-1"></i> <!-- Representa el GTI -->
+<i class="bi bi-speedometer2 fs-1 text-danger"></i> <!-- Potencia y velocidad -->
+<i class="bi bi-fuel-pump fs-1 text-success"></i> <!-- Motor TSI -->
+<i class="bi bi-star-fill fs-1 text-warning"></i> <!-- Ícono legendario -->
+
+<br><br><br><br><br><br><br><br>
+
+<h2 class="text-center my-5">MENU</h2>
+<button class="btn-solid theme-primary" type="button" data-bs-toggle="menu" aria-expanded="false">
+  Toca el menú
+</button>
+<div class="menu">
+  <a class="menu-item" href="#">Inicio GTI</a>
+  <a class="menu-item" href="#">Especificaciones</a>
+  <a class="menu-item" href="#">Versiones</a>
+  <a class="menu-item" href="#">Galería</a>
+</div>
+
+<br><br><br><br><br><br><br><br>
+
+
+<h2 class="text-center my-5">SCROLLPY</h2>
+<nav id="navbar-example2" class="navbar bg-1 px-3 mb-3">
+  <a class="navbar-brand" href="#">Volkswagen GTI</a>
+
+  <ul class="nav nav-pills">
+    <li class="nav-item">
+      <a class="nav-link" href="#scrollspyHeading1">Historia</a>
+    </li>
+
+    <li class="nav-item">
+      <a class="nav-link" href="#scrollspyHeading2">Modelos</a>
+    </li>
+
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" href="#"
+         role="button" data-bs-toggle="dropdown"
+         aria-expanded="false">Más información</a>
+
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="#scrollspyHeading3">Modelos</a></li>
+        <li><a class="dropdown-item" href="#scrollspyHeading4">Diseño</a></li>
+        <li><a class="dropdown-item" href="#scrollspyHeading5">Tecnología</a></li>
+        <li><a class="dropdown-item" href="#scrollspyHeading6">Versiones</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+<div data-bs-spy="scroll"
+     data-bs-target="#navbar-example2"
+     data-bs-root-margin="0px 0px -40%"
+     data-bs-smooth-scroll="true"
+     class="scrollspy-example bg-1 p-3 rounded-2"
+     tabindex="0"
+     style="height: 300px; overflow-y: auto;">
+
+  <h4 id="scrollspyHeading1">Historia del GTI</h4>
+  <p>El Volkswagen Golf GTI nació en 1976 como un proyecto casi secreto dentro de la marca. Su objetivo era crear un compacto deportivo accesible, y terminó convirtiéndose en un ícono mundial de los hatchbacks deportivos.</p>
+
+  <h4 id="scrollspyHeading2">Modelos</h4>
+  <p>El Golf GTI 2026 llega con varias versiones y mejoras clave: motor 2.0 TSI de hasta 261 HP, transmisión DSG de 7 velocidades, pantalla táctil de 12.9” y asistentes de conducción avanzados.</p>
+
+  <h4 id="scrollspyHeading3">Diseño</h4>
+  <p>El GTI se distingue por su parrilla tipo panal con detalles rojos, rines deportivos, escape doble cromado y asientos con tapicería exclusiva. Su estética mezcla tradición con modernidad.</p>
+
+  <h4 id="scrollspyHeading4">Tecnología</h4>
+  <p>Incluye pantalla táctil de 12.9”, sistema de sonido Harman/Kardon®, asistentes IQ.DRIVE®, control de chasis adaptativo DCC y modos de conducción personalizables.</p>
+
+  <h4 id="scrollspyHeading5">Versiones</h4>
+  <p>Entre las principales versiones están el GTI estándar, el GTI Autobahn y el GTI Clubsport. Cada una ofrece diferentes niveles de potencia, equipamiento y diseño.</p>
+</div>
+
+<br><br><br><br><br><br><br><br>
+
+
+<h2 class="text-center my-5">CARD</h2>
+<section class="card" style="max-width: 320px">
+  <img src="css/img/fondo1.webp" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h4 class="card-title">Golf GTI Mk8 </h4>
+    <p class="card-text">(2020–2026)</p>
+    <a href="#" class="btn-solid theme-primary">Ve a ver como luce </a>
+  </div>
+</section>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script type="module" src="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-1a/pXj49ZQ1aHEmrJ+gMw1otqoVsYwlEnlD8mIfY2TV03r20Y0CN7uqx1tQogjPL" crossorigin="anonymous"></script>
+</body>
+</html>
